@@ -1,4 +1,4 @@
---- 
+---
 title: "Making Sense of Crime Data"
 author: 
 date: "`r Sys.Date()`"
@@ -12,28 +12,28 @@ github-repo: rstudio/bookdown-demo
 description: "This is a companion workbook for the 2nd year undergraduate module CRIM20441 Making Sense of Criminological Data at the University of Manchester."
 ---
 
-# Introduction {-}
+# Introduction {.unnumbered}
+
+<span style="color: red;">**The most up to date content is here: <https://uom-resquant.github.io/MSCD_labs/>**</span>
 
 This study material is designed to introduce Criminology students at the University of Manchester to using data analysis in crime research and practice. This is an improved version of the material originally developed by Reka Solymosi, and is currently being updated and maintained by Ana Maria Nicoriciu and Nico Trajtenberg.
 
-This lab note is a work in process. If you have any suggestions or find any errors, please don’t hesitate to contact us. We appreciate your feedback and will use it to improve the material for future students.
+This lab note is a work in process. If you have any suggestions or find any errors, please don't hesitate to contact us. We appreciate your feedback and will use it to improve the material for future students.
 
 This workbook contains the lab materials and homework assignments for an introduction to a data analysis course designed for **CRIM20441 Making Sense of Criminological Data**, a 2nd-year undergraduate module of the BA Criminology programme at the University of Manchester.
 
 Throughout this module, you'll explore the essential techniques of descriptive data analysis in criminology, integrating both quantitative and qualitative approaches. Quantitative methods provide structured ways to measure and analyse crime data patterns, while qualitative methods offer a deeper understanding of the meanings and contexts behind those numbers. The distinction between being solely a "quantitative person" or a "qualitative person" is increasingly outdated. Mastering both techniques will enhance your ability to analyse and interpret diverse datasets, depending on the research question and project goals, making you a more versatile and effective analyst.
 
-The course uses Excel, as we have identified a gap in training students to use Excel, despite it being a primary tool for data analysis (whether we like it or not) in many public and private sector organisations. As many students take [Q-step internships](https://www.humanities.manchester.ac.uk/q-step/), this skill was identified as important. 
+The course uses Excel, as we have identified a gap in training students to use Excel, despite it being a primary tool for data analysis (whether we like it or not) in many public and private sector organisations. As many students take [Q-step internships](https://www.humanities.manchester.ac.uk/q-step/), this skill was identified as important.
 
 By the end of this module, you will have a strong foundation in various data types, the methods to generate them, and the approaches to analyse them. Engage actively with the materials, and consider how these techniques can be applied in real-world scenarios.
 
-## Disclaimer {-}
+## Disclaimer {.unnumbered}
 
 Please beware that:
 
-- In making these notes, while we briefly cover some concepts, students are expected to do the weekly reading, attend the weekly lectures, and participate in lab discussions to receive a complete course experience. These notes are *not* intended to be a stand-alone reference or textbook but rather a set of exercises to gain hands-on practice with the concepts introduced during the course.
-- These pages are the content of the BA Criminology 2nd year course, Making Sense of Criminological Data. They are meant to (very gently) introduce undergraduates to the concept of data analysis and cover descriptive statistics and the key concepts required to build an understanding of quantitative and qualitative data analysis in crime research. It is followed in the second term by Modelling Criminological Data, where students cover inferential statistics. The notes presented here are supported by compulsory reading and some lectures, so they do not comprehensively describe these techniques and tools and how to use them.
-The handouts below use, among other data sets, data from the [UK Data Service](https://ukdataservice.ac.uk/), such as the [Crime Survey for England and Wales](https://beta.ukdataservice.ac.uk/datacatalogue/series/series?id=200009), which is available under an Open Government Licence. This dataset is designed to be a learning resource and should not be used for research purposes or the production of summary statistics.
-
+-   In making these notes, while we briefly cover some concepts, students are expected to do the weekly reading, attend the weekly lectures, and participate in lab discussions to receive a complete course experience. These notes are *not* intended to be a stand-alone reference or textbook but rather a set of exercises to gain hands-on practice with the concepts introduced during the course.
+-   These pages are the content of the BA Criminology 2nd year course, Making Sense of Criminological Data. They are meant to (very gently) introduce undergraduates to the concept of data analysis and cover descriptive statistics and the key concepts required to build an understanding of quantitative and qualitative data analysis in crime research. It is followed in the second term by Modelling Criminological Data, where students cover inferential statistics. The notes presented here are supported by compulsory reading and some lectures, so they do not comprehensively describe these techniques and tools and how to use them. The handouts below use, among other data sets, data from the [UK Data Service](https://ukdataservice.ac.uk/), such as the [Crime Survey for England and Wales](https://beta.ukdataservice.ac.uk/datacatalogue/series/series?id=200009), which is available under an Open Government Licence. This dataset is designed to be a learning resource and should not be used for research purposes or the production of summary statistics.
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
